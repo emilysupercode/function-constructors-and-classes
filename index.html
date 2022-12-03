@@ -31,6 +31,62 @@
         </form>
         <ul id="result"></ul>
     </section>
+    <hr>
+    <h2>3_15</h2>
+    <h3>Create your own panini card</h3>
+    <form id="inputform">
+        <div class="halfwidthdiv">
+            <input type="text" name="cardFirstName" id="cardFirstName" class="halfwidth" placeholder="First Name">
+            <input type="text" name="lastName" id="lastName" class="halfwidth" placeholder="Last Name">
+        </div>
+        <div>
+            <input type="text" name="stageName" id="stageName" class="fullwidth" placeholder="Stage Name">
+        </div>
+        <div class="halfwidthdiv">
+            <input type="number" name="albums" id="albums" class="halfwidth" placeholder="How many albums?">
+            <input type="number" name="top10singles" id="top10singles" class="halfwidth"
+                placeholder="How many top 10 singles?">
+        </div>
+        <div class="halfwidthdiv">
+            <input type="number" name="netWorth" id="netWorth" class="halfwidth" placeholder="Net Worth in €">
+            <input type="number" name="age" id="cardAge" class="halfwidth" placeholder="Age">
+        </div>
+        <input type="textarea" name="famousQuote" id="famousQuote" class="textarea"
+            placeholder="A famous quote by this person">
+        <br>
+        <input type="url" name="imageURL" id="imageURL" class="fullwidth" placeholder="Image URL">
+        <br>
+        <input type="submit" name="submitButton" value="Add" onclick="createCard(event)">
+    </form>
+    <section id="outputSection">
+        <section id="paniniCardOutput">
+            <p class="outputName"></p>
+            <p class="stageName"></p>
+            <section class="outputHeader">
+                <article>
+                    <p>Albums:</p>
+                    <p class="outputAlbums"></p>
+                </article>
+                <article>
+                    <p>Hits:</p>
+                    <p class="outputSingles"></p>
+                </article>
+                <article>
+                    <p>Net Worth:</p>
+                    <p class="outputNetWorth"></p>
+                </article>
+                <article>
+                    <p>Age:</p>
+                    <p class="outputAge"></p>
+                </article>
+            </section>
+            <section>
+                <p class="outputQuote"></p>
+            </section>
+        </section>
+        <button type="button" onclick="resetForm()">Reset</button>
+    </section>
+
     <script src="./assets/js/main.js"></script>
 </body>
 
